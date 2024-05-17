@@ -31,11 +31,14 @@ export default function CardDetails() {
           navigation={true}
           modules={[Navigation, Autoplay]}
           autoplay={{ delay: 5000 }}
-          className="w-4/5  md:w-6/12"
+          className="w-full md:w-6/12"
         >
           <SwiperSlide className="sm:flex sm:items-center">
             {" "}
-            <img src={parc.imgSrc1} className="w-full h-2/5 px-20 " />
+            <img
+              src={parc.imgSrc1}
+              className="w-auto  sm:w-full h-2/5 px-20 "
+            />
           </SwiperSlide>
           <SwiperSlide>
             {" "}

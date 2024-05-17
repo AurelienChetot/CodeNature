@@ -7,7 +7,7 @@ export default function Card({ data }) {
         <img src={data.imgSrc1} alt="Shoes" className="rounded-xl h-60" />
       </figure>
       <div className="card-body items-center text-center">
-        <h2 className="card-title">{data.title}</h2>
+        <h2 className="card-title text-teal-600">{data.title}</h2>
         <p>{data.desc}</p>
         <div className="card-actions">
           <NavLink
