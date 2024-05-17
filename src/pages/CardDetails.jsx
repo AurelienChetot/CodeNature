@@ -3,6 +3,7 @@ import data from "../../data.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+import "../styles/About.scss";
 import "swiper/css";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
@@ -30,15 +31,15 @@ export default function CardDetails() {
           navigation={true}
           modules={[Navigation, Autoplay]}
           autoplay={{ delay: 5000 }}
-          className="md:w-6/12"
+          className="w-4/5  md:w-6/12"
         >
-          <SwiperSlide>
+          <SwiperSlide className="sm:flex sm:items-center">
             {" "}
             <img src={parc.imgSrc1} className="w-full h-2/5 px-20 " />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img src={parc.imgSrc2} className="w-full h-2/5 px-20" />
+            <img src={parc.imgSrc2} className="w-auto sm:w-full h-2/5 px-20" />
           </SwiperSlide>
         </Swiper>
         <div className="">
