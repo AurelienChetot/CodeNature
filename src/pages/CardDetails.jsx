@@ -55,7 +55,7 @@ export default function CardDetails() {
             <p className="text-center mb-6">Cliquez pour agrandir l'image</p>
             <p>{parc.creationDate}</p>
             <p>Supérficie: {parc.areaKm}</p>
-            <p>{parc.desc}</p>
+            <p className="pb-28">{parc.desc}</p>
           </div>
         </div>
       </div>
