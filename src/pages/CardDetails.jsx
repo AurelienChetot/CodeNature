@@ -38,14 +38,14 @@ export default function CardDetails() {
           <SwiperSlide className="sm:flex sm:items-center">
             <img
               src={parc.imgSrc1}
-              className="w-auto sm:w-full h-2/5 px-20 cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="w-auto sm:w-full h-2/5 px-20 cursor-pointer transition-transform duration-300 ease-in-out transform"
               onClick={() => handleImageClick(parc.imgSrc1)}
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
               src={parc.imgSrc2}
-              className="w-auto sm:w-full h-2/5 px-20 cursor-pointer transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="w-auto sm:w-full h-2/5 px-20 cursor-pointer transition-transform duration-300 ease-in-out transform"
               onClick={() => handleImageClick(parc.imgSrc2)}
             />
           </SwiperSlide>
