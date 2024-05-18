@@ -20,7 +20,7 @@ export default function Card({ data }) {
             to={`/flowers/${data.id}`}
             className="btn btn-primary text-sky-100 bg-green-950 border-green-600 hover:bg-green-300 hover:border-green-950 hover:text-black hover:scale-125"
           >
-            Fleur
+            Flore
           </NavLink>
         </div>
       </div>
