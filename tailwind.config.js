@@ -4,6 +4,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        nature: ["Nature", "sans-serif"],
+      },
       margin: {
         "305px": "305px",
       },
@@ -13,4 +16,14 @@ export default {
     },
   },
   plugins: [daisyui],
+  daisyui: {
+    themes: [
+      {
+        forest: {
+          ...require("daisyui/src/theming/themes")["forest"],
+          "--rounded-btn": "0.50rem",
+        },
+      },
+    ],
+  },
 };

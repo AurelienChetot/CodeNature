@@ -4,7 +4,7 @@ import dataf from "../../dataf.json";
 export default function FlowerList() {
   return (
     <div>
-      <div className="flex flex-wrap justify-center mt-[75px] mb-[75px] gap-10">
+      <div className="bg-stone-300 flex flex-wrap justify-center pt-[75px] pb-[75px] gap-10">
         {dataf.flower.map((d) => (
           <Flower key={d.id} dataf={d} />
         ))}

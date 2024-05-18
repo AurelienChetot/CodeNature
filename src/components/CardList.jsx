@@ -3,7 +3,7 @@ import data from "../../data.json";
 
 export default function CardList() {
   return (
-    <div className="flex flex-wrap justify-center mt-[75px] mb-[75px] gap-10">
+    <div className="flex flex-wrap justify-center pt-[75px] pb-[75px] gap-10 bg-stone-300">
       {data.data.map((d) => (
         <Card key={d.id} data={d} />
       ))}

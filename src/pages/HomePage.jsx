@@ -1,11 +1,11 @@
 import IMG from "../assets/imgfrance-parc.jpg";
 export default function HomePage() {
   return (
-    <>
+    <div className="bg-stone-300 pt-[75px] pb-[75px]">
       <h1 className="text-center my-10 text-3xl text-teal-800">
         Les Parcs Nationaux de France
       </h1>
-      <p className="px-10 lg:px-40 xl:px-96">
+      <p className="px-10 lg:px-40 xl:px-96 text-stone-950">
         Bienvenue sur notre site dédié aux parcs nationaux de France ! Plongez
         au cœur de la nature sauvage et préservée de nos régions, découvrez des
         paysages à couper le souffle et une flore exceptionnelles, et
@@ -22,6 +22,6 @@ export default function HomePage() {
           alt="Tout les parcs"
         />
       </div>
-    </>
+    </div>
   );
 }

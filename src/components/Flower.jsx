@@ -8,18 +8,18 @@ export default function Flowers({ dataf }) {
       </figure>
       <div className="card-body items-center text-center px-px py-px ">
         <h2 className="card-title text-teal-600 font-black ">{dataf.title}</h2>
-        <p>{dataf.desc}</p>
+        <p className="text-slate-950">{dataf.desc}</p>
         <div className="flex flex-col">
           <p className="text-teal-600 font-black underline">Habitat :</p>
-          <p>{dataf.habitat}</p>
+          <p className="text-slate-950">{dataf.habitat}</p>
         </div>
         <div className="flex flex-col">
           <p className="text-teal-600 font-black underline">Hauteur :</p>
-          <p>{dataf.height}</p>
+          <p className="text-slate-950"> {dataf.height}</p>
         </div>
         <div className="flex flex-col">
           <p className="text-teal-600 font-black underline">Médical :</p>
-          <p>{dataf.medical_use}</p>
+          <p className="text-slate-950">{dataf.medical_use}</p>
         </div>
       </div>
     </div>

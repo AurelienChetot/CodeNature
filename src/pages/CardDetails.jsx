@@ -24,9 +24,11 @@ export default function CardDetails() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-slate-700 from-10% via-slate-800 via-40% to-slate-900">
+    <div className="bg-stone-300">
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl pt-8 pb-5">{parc.title}</h1>
+        <h1 className="text-3xl pt-8 pb-5 text-teal-600 font-black">
+          {parc.title}
+        </h1>
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
@@ -52,10 +54,12 @@ export default function CardDetails() {
         </Swiper>
         <div className="">
           <div className="max-w-containText">
-            <p className="text-center mb-6">Cliquez pour agrandir l'image</p>
-            <p>{parc.creationDate}</p>
-            <p>Supérficie: {parc.areaKm}</p>
-            <p className="pb-28">{parc.desc}</p>
+            <p className="text-center mb-6 text-slate-950">
+              Cliquez pour agrandir l'image
+            </p>
+            <p className="text-slate-950">{parc.creationDate}</p>
+            <p className="text-slate-950">Supérficie: {parc.areaKm}</p>
+            <p className="pb-28 text-slate-950">{parc.desc}</p>
           </div>
         </div>
       </div>

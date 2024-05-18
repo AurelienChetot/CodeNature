@@ -20,32 +20,36 @@ export default function FlowerDetails() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-slate-700 from-10% via-slate-800 via-40% to-slate-900">
+    <div className="bg-stone-300">
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl pt-8 pb-5">{flower.title}</h1>
+        <h1 className="text-3xl pt-8 pb-5 text-teal-600 font-black">
+          {flower.title}
+        </h1>
 
         <img
           src={flower.imgSrc1}
-          className="w-auto sm:w-full lg:max-h-full lg:max-w-6xl h-2/5 px-20 cursor-pointer transition-transform duration-300 ease-in-out transform"
+          className="w-auto sm:w-full lg:max-h-full lg:max-w-4xl h-2/5 px-20 cursor-pointer transition-transform duration-300 ease-in-out transform"
           onClick={() => handleImageClick(flower.imgSrc1)}
         />
-        <p className="text-center mb-6">Cliquez pour agrandir l'image</p>
+        <p className="text-center mb-6 text-slate-950">
+          Cliquez pour agrandir l'image
+        </p>
         <div className="card-body items-center text-center px-px py-px ">
           <h2 className="card-title text-teal-600 font-black ">
             {flower.title}
           </h2>
-          <p>{flower.desc}</p>
+          <p className="text-slate-950"> {flower.desc}</p>
           <div className="flex flex-col">
-            <p className="text-teal-600 font-black underline">Habitat :</p>
-            <p>{flower.habitat}</p>
+            <p className="text-teal-600 font-black ">Habitat :</p>
+            <p className="text-slate-950">{flower.habitat}</p>
           </div>
           <div className="flex flex-col">
-            <p className="text-teal-600 font-black underline">Hauteur :</p>
-            <p>{flower.height}</p>
+            <p className="text-teal-600 font-black ">Hauteur :</p>
+            <p className="text-slate-950">{flower.height}</p>
           </div>
           <div className="flex flex-col">
-            <p className="text-teal-600 font-black underline ">Médical :</p>
-            <p className="mb-[75px]">{flower.medical_use}</p>
+            <p className="text-teal-600 font-black  ">Médical :</p>
+            <p className="mb-[75px] text-slate-950">{flower.medical_use}</p>
           </div>
           <Modal
             isOpen={isModalOpen}

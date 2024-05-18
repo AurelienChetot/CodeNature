@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[data-theme="forest"] .card {
+  @apply bg-green-800 bg-opacity-20 border-4 border-green-800 hover:border-green-300 text-sky-100;
+}
+
+@font-face {
+  font-family: "Nature";
+  src: url("/font/The Natures.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
