@@ -7,6 +7,7 @@ import "./index.css";
 import AboutList from "./pages/AboutList";
 import FlowerList from "./components/FlowerList";
 import CardDetails from "./pages/CardDetails";
+import FlowerDetails from "./pages/FlowerDetails";
 import HomePage from "./pages/HomePage";
 import CardList from "./components/CardList";
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/details/:id",
         element: <CardDetails />,
+      },
+      {
+        path: "/flowers/:id",
+        element: <FlowerDetails />,
       },
       {
         path: "/flowers",
